@@ -1,0 +1,12 @@
+Flask
+itsdangerous
+Jinja2
+Markupsafe
+numpy
+scikit-learn
+python-dotenv
+gunicorn
+flask_cors
+tensorflow
+opencv-python
+flasgger
