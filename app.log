@@ -1,0 +1,135 @@
+2025-06-15 01:36:14,400 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-06-15 01:36:14,459 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-15 01:36:14,459 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-15 01:36:14,460 - INFO -  * Restarting with stat
+2025-06-15 01:36:17,062 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-06-15 01:36:17,072 - WARNING -  * Debugger is active!
+2025-06-15 01:36:17,075 - INFO -  * Debugger PIN: 307-477-921
+2025-06-15 01:36:32,982 - INFO - 127.0.0.1 - - [15/Jun/2025 01:36:32] "GET / HTTP/1.1" 200 -
+2025-06-15 01:36:33,027 - INFO - 127.0.0.1 - - [15/Jun/2025 01:36:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-15 01:36:39,864 - INFO - 127.0.0.1 - - [15/Jun/2025 01:36:39] "[33mGET /apidocs HTTP/1.1[0m" 404 -
+2025-06-15 01:37:12,533 - INFO -  * Detected change in 'E:\\projek\\AI\\lung-cancer-classification-main\\app.py', reloading
+2025-06-15 01:37:12,835 - INFO -  * Restarting with stat
+2025-06-15 01:37:15,506 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-06-15 01:37:15,518 - WARNING -  * Debugger is active!
+2025-06-15 01:37:15,520 - INFO -  * Debugger PIN: 307-477-921
+2025-06-15 01:37:16,798 - INFO - 127.0.0.1 - - [15/Jun/2025 01:37:16] "[32mGET /apidocs HTTP/1.1[0m" 308 -
+2025-06-15 01:37:16,826 - INFO - 127.0.0.1 - - [15/Jun/2025 01:37:16] "GET /apidocs/ HTTP/1.1" 200 -
+2025-06-15 01:37:16,924 - INFO - 127.0.0.1 - - [15/Jun/2025 01:37:16] "GET /flasgger_static/swagger-ui.css HTTP/1.1" 200 -
+2025-06-15 01:37:16,961 - INFO - 127.0.0.1 - - [15/Jun/2025 01:37:16] "GET /flasgger_static/lib/jquery.min.js HTTP/1.1" 200 -
+2025-06-15 01:37:16,993 - INFO - 127.0.0.1 - - [15/Jun/2025 01:37:16] "GET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+2025-06-15 01:37:17,053 - INFO - 127.0.0.1 - - [15/Jun/2025 01:37:17] "GET /flasgger_static/swagger-ui-bundle.js HTTP/1.1" 200 -
+2025-06-15 01:37:17,118 - INFO - 127.0.0.1 - - [15/Jun/2025 01:37:17] "GET /apispec_1.json HTTP/1.1" 200 -
+2025-06-15 01:37:17,127 - INFO - 127.0.0.1 - - [15/Jun/2025 01:37:17] "GET /flasgger_static/favicon-32x32.png HTTP/1.1" 200 -
+2025-06-15 01:38:04,497 - INFO - 127.0.0.1 - - [15/Jun/2025 01:38:04] "POST /predict HTTP/1.1" 200 -
+2025-06-15 01:38:43,408 - INFO - 127.0.0.1 - - [15/Jun/2025 01:38:43] "POST /predict HTTP/1.1" 200 -
+2025-06-15 01:39:02,981 - INFO - 127.0.0.1 - - [15/Jun/2025 01:39:02] "POST /predict HTTP/1.1" 200 -
+2025-06-15 01:39:15,659 - INFO - 127.0.0.1 - - [15/Jun/2025 01:39:15] "POST /predict HTTP/1.1" 200 -
+2025-06-15 01:39:16,840 - INFO - 127.0.0.1 - - [15/Jun/2025 01:39:16] "POST /predict HTTP/1.1" 200 -
+2025-06-15 01:44:25,761 - INFO - 127.0.0.1 - - [15/Jun/2025 01:44:25] "POST /predict HTTP/1.1" 200 -
+2025-06-15 03:57:13,721 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-06-15 03:57:13,767 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-15 03:57:13,767 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-15 03:57:13,769 - INFO -  * Restarting with stat
+2025-06-15 03:57:16,484 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-06-15 03:57:16,495 - WARNING -  * Debugger is active!
+2025-06-15 03:57:16,498 - INFO -  * Debugger PIN: 121-771-984
+2025-06-15 03:57:18,270 - INFO - 127.0.0.1 - - [15/Jun/2025 03:57:18] "GET / HTTP/1.1" 200 -
+2025-06-15 03:57:24,763 - INFO - 127.0.0.1 - - [15/Jun/2025 03:57:24] "GET /apidocs/ HTTP/1.1" 200 -
+2025-06-15 03:57:24,905 - INFO - 127.0.0.1 - - [15/Jun/2025 03:57:24] "GET /flasgger_static/swagger-ui.css HTTP/1.1" 200 -
+2025-06-15 03:57:24,930 - INFO - 127.0.0.1 - - [15/Jun/2025 03:57:24] "GET /flasgger_static/lib/jquery.min.js HTTP/1.1" 200 -
+2025-06-15 03:57:24,958 - INFO - 127.0.0.1 - - [15/Jun/2025 03:57:24] "GET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+2025-06-15 03:57:25,043 - INFO - 127.0.0.1 - - [15/Jun/2025 03:57:25] "GET /flasgger_static/swagger-ui-bundle.js HTTP/1.1" 200 -
+2025-06-15 03:57:25,113 - INFO - 127.0.0.1 - - [15/Jun/2025 03:57:25] "GET /apispec_1.json HTTP/1.1" 200 -
+2025-06-15 03:57:33,851 - INFO - 127.0.0.1 - - [15/Jun/2025 03:57:33] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-06-15 03:57:42,554 - INFO - 127.0.0.1 - - [15/Jun/2025 03:57:42] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-06-15 03:57:43,404 - INFO - 127.0.0.1 - - [15/Jun/2025 03:57:43] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-06-15 03:58:09,236 - INFO -  * Detected change in 'E:\\projek\\AI\\API_lung-cancer-classification\\app.py', reloading
+2025-06-15 03:58:10,953 - INFO -  * Restarting with stat
+2025-06-15 03:58:13,687 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-06-15 03:58:13,700 - WARNING -  * Debugger is active!
+2025-06-15 03:58:13,702 - INFO -  * Debugger PIN: 121-771-984
+2025-06-15 03:58:15,485 - INFO - 127.0.0.1 - - [15/Jun/2025 03:58:15] "GET /apidocs/ HTTP/1.1" 200 -
+2025-06-15 03:58:15,597 - INFO - 127.0.0.1 - - [15/Jun/2025 03:58:15] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2025-06-15 03:58:15,600 - INFO - 127.0.0.1 - - [15/Jun/2025 03:58:15] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2025-06-15 03:58:15,602 - INFO - 127.0.0.1 - - [15/Jun/2025 03:58:15] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2025-06-15 03:58:15,602 - INFO - 127.0.0.1 - - [15/Jun/2025 03:58:15] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2025-06-15 03:58:15,658 - INFO - 127.0.0.1 - - [15/Jun/2025 03:58:15] "GET /apispec_1.json HTTP/1.1" 200 -
+2025-06-15 03:58:15,665 - INFO - 127.0.0.1 - - [15/Jun/2025 03:58:15] "GET /flasgger_static/favicon-32x32.png HTTP/1.1" 200 -
+2025-06-15 03:58:22,509 - INFO - 127.0.0.1 - - [15/Jun/2025 03:58:22] "POST /predict HTTP/1.1" 200 -
+2025-06-15 03:58:54,749 - INFO -  * Detected change in 'E:\\projek\\AI\\API_lung-cancer-classification\\app.py', reloading
+2025-06-15 03:58:55,071 - INFO -  * Restarting with stat
+2025-06-15 03:58:57,686 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-06-15 03:58:57,697 - WARNING -  * Debugger is active!
+2025-06-15 03:58:57,700 - INFO -  * Debugger PIN: 121-771-984
+2025-06-15 03:59:09,943 - INFO - 127.0.0.1 - - [15/Jun/2025 03:59:09] "POST /predict HTTP/1.1" 200 -
+2025-06-15 04:00:28,585 - INFO -  * Detected change in 'E:\\projek\\AI\\API_lung-cancer-classification\\app.py', reloading
+2025-06-15 04:00:28,867 - INFO -  * Restarting with stat
+2025-06-15 04:01:54,628 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-06-15 04:01:54,645 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-15 04:01:54,645 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-15 04:01:54,646 - INFO -  * Restarting with stat
+2025-06-15 04:01:57,225 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-06-15 04:01:57,236 - WARNING -  * Debugger is active!
+2025-06-15 04:01:57,239 - INFO -  * Debugger PIN: 121-771-984
+2025-06-15 04:02:02,912 - INFO - 127.0.0.1 - - [15/Jun/2025 04:02:02] "GET /apidocs/ HTTP/1.1" 200 -
+2025-06-15 04:02:03,010 - INFO - 127.0.0.1 - - [15/Jun/2025 04:02:03] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2025-06-15 04:02:03,016 - INFO - 127.0.0.1 - - [15/Jun/2025 04:02:03] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2025-06-15 04:02:03,020 - INFO - 127.0.0.1 - - [15/Jun/2025 04:02:03] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2025-06-15 04:02:03,020 - INFO - 127.0.0.1 - - [15/Jun/2025 04:02:03] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2025-06-15 04:02:03,058 - INFO - 127.0.0.1 - - [15/Jun/2025 04:02:03] "GET /apispec_1.json HTTP/1.1" 200 -
+2025-06-15 04:02:03,059 - INFO - 127.0.0.1 - - [15/Jun/2025 04:02:03] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2025-06-15 04:02:03,912 - INFO - 127.0.0.1 - - [15/Jun/2025 04:02:03] "GET /apidocs/ HTTP/1.1" 200 -
+2025-06-15 04:02:03,926 - INFO - 127.0.0.1 - - [15/Jun/2025 04:02:03] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2025-06-15 04:02:03,927 - INFO - 127.0.0.1 - - [15/Jun/2025 04:02:03] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2025-06-15 04:02:03,928 - INFO - 127.0.0.1 - - [15/Jun/2025 04:02:03] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2025-06-15 04:02:03,929 - INFO - 127.0.0.1 - - [15/Jun/2025 04:02:03] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2025-06-15 04:02:03,955 - INFO - 127.0.0.1 - - [15/Jun/2025 04:02:03] "GET /apispec_1.json HTTP/1.1" 200 -
+2025-06-15 04:02:03,957 - INFO - 127.0.0.1 - - [15/Jun/2025 04:02:03] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2025-06-15 04:02:16,760 - INFO -  * Detected change in 'E:\\projek\\AI\\API_lung-cancer-classification\\app.py', reloading
+2025-06-15 04:02:17,030 - INFO -  * Restarting with stat
+2025-06-15 04:02:19,655 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-06-15 04:02:19,666 - WARNING -  * Debugger is active!
+2025-06-15 04:02:19,669 - INFO -  * Debugger PIN: 121-771-984
+2025-06-15 04:02:22,127 - INFO -  * Detected change in 'E:\\projek\\AI\\API_lung-cancer-classification\\app.py', reloading
+2025-06-15 04:02:22,430 - INFO -  * Restarting with stat
+2025-06-15 04:02:25,039 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-06-15 04:02:25,050 - WARNING -  * Debugger is active!
+2025-06-15 04:02:25,052 - INFO -  * Debugger PIN: 121-771-984
+2025-06-15 04:02:32,022 - INFO -  * Detected change in 'E:\\projek\\AI\\API_lung-cancer-classification\\app.py', reloading
+2025-06-15 04:02:32,299 - INFO -  * Restarting with stat
+2025-06-15 04:02:34,937 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-06-15 04:02:34,949 - WARNING -  * Debugger is active!
+2025-06-15 04:02:34,951 - INFO -  * Debugger PIN: 121-771-984
+2025-06-15 04:02:37,413 - INFO -  * Detected change in 'E:\\projek\\AI\\API_lung-cancer-classification\\app.py', reloading
+2025-06-15 04:02:37,695 - INFO -  * Restarting with stat
+2025-06-15 04:02:40,327 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-06-15 04:02:40,339 - WARNING -  * Debugger is active!
+2025-06-15 04:02:40,341 - INFO -  * Debugger PIN: 121-771-984
+2025-06-15 04:02:40,570 - INFO -  * Detected change in 'E:\\projek\\AI\\API_lung-cancer-classification\\app.py', reloading
+2025-06-15 04:02:40,870 - INFO -  * Restarting with stat
+2025-06-15 04:02:43,502 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-06-15 04:02:43,514 - WARNING -  * Debugger is active!
+2025-06-15 04:02:43,516 - INFO -  * Debugger PIN: 121-771-984
+2025-06-15 04:02:46,003 - INFO -  * Detected change in 'E:\\projek\\AI\\API_lung-cancer-classification\\app.py', reloading
+2025-06-15 04:02:46,265 - INFO -  * Restarting with stat
+2025-06-15 04:02:48,907 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-06-15 04:02:48,920 - WARNING -  * Debugger is active!
+2025-06-15 04:02:48,922 - INFO -  * Debugger PIN: 121-771-984
+2025-06-15 04:02:50,289 - INFO -  * Detected change in 'E:\\projek\\AI\\API_lung-cancer-classification\\app.py', reloading
+2025-06-15 04:02:50,586 - INFO -  * Restarting with stat
+2025-06-15 04:02:53,197 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-06-15 04:02:53,210 - WARNING -  * Debugger is active!
+2025-06-15 04:02:53,212 - INFO -  * Debugger PIN: 121-771-984
+2025-06-15 04:02:53,349 - INFO - 127.0.0.1 - - [15/Jun/2025 04:02:53] "GET /apidocs/ HTTP/1.1" 200 -
+2025-06-15 04:02:53,451 - INFO - 127.0.0.1 - - [15/Jun/2025 04:02:53] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2025-06-15 04:02:53,451 - INFO - 127.0.0.1 - - [15/Jun/2025 04:02:53] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2025-06-15 04:02:53,454 - INFO - 127.0.0.1 - - [15/Jun/2025 04:02:53] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2025-06-15 04:02:53,455 - INFO - 127.0.0.1 - - [15/Jun/2025 04:02:53] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2025-06-15 04:02:53,492 - INFO - 127.0.0.1 - - [15/Jun/2025 04:02:53] "GET /apispec_1.json HTTP/1.1" 200 -
+2025-06-15 04:02:53,494 - INFO - 127.0.0.1 - - [15/Jun/2025 04:02:53] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2025-06-15 04:02:59,455 - INFO - 127.0.0.1 - - [15/Jun/2025 04:02:59] "POST /predict HTTP/1.1" 200 -
+2025-06-15 04:03:15,194 - INFO - 127.0.0.1 - - [15/Jun/2025 04:03:15] "POST /predict HTTP/1.1" 200 -
