@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Lung Cancer Prediction</title>
   <style>
     body {
@@ -21,6 +21,17 @@
 
     input[type="file"] {
       margin: 10px 0;
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: 2px dashed #2196F3;
+      cursor: pointer;
+      background-color: #eaf4fc;
+      transition: border-color 0.3s ease;
+    }
+
+    input[type="file"]:hover {
+      border-color: #1976d2;
     }
 
     button {
@@ -28,6 +39,32 @@
       font-size: 16px;
       margin-top: 10px;
       cursor: pointer;
+      width: 100%;
+      background-color: #2196F3;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #1976d2;
+    }
+
+    .preview {
+      margin-top: 20px;
+      text-align: center;
+      border: 2px solid #2196F3;
+      border-radius: 10px;
+      padding: 10px;
+      background-color: white;
+    }
+
+    .preview img {
+      max-width: 100%;
+      max-height: 300px;
+      border-radius: 8px;
+      object-fit: contain;
     }
 
     .result {
@@ -35,20 +72,35 @@
       padding: 15px;
       background-color: #fff;
       border-left: 5px solid #2196F3;
+      white-space: normal;
+      color: #0d1333;
+    }
+
+    .result ul {
+      padding-left: 20px;
+      margin-top: 5px;
+    }
+
+    .result li {
+      margin-bottom: 6px;
+      font-size: 15px;
     }
 
     .error {
+      margin-top: 20px;
       color: red;
+      font-weight: 600;
+      text-align: center;
     }
   </style>
 </head>
 
 <body>
-
   <h2>Lung Cancer Prediction</h2>
 
   <form id="uploadForm">
-    <input type="file" id="fileInput" name="file" accept="image/*" required><br>
+    <input type="file" id="fileInput" name="file" accept="image/*" required />
+    <div class="preview" id="preview">No image selected</div>
     <button type="submit">Predict</button>
   </form>
 
@@ -56,16 +108,39 @@
   <div id="error" class="error"></div>
 
   <script>
+    const fileInput = document.getElementById("fileInput");
+    const previewDiv = document.getElementById("preview");
+    const resultDiv = document.getElementById("result");
+    const errorDiv = document.getElementById("error");
+
+    fileInput.addEventListener("change", () => {
+      resultDiv.style.display = "none";
+      errorDiv.textContent = "";
+      previewDiv.innerHTML = "";
+
+      const file = fileInput.files[0];
+      if (file) {
+        const img = document.createElement("img");
+        img.src = URL.createObjectURL(file);
+        img.alt = "Selected Image Preview";
+        previewDiv.appendChild(img);
+      } else {
+        previewDiv.textContent = "No image selected";
+      }
+    });
+
     document.getElementById("uploadForm").addEventListener("submit", async function (e) {
       e.preventDefault();
 
-      const fileInput = document.getElementById("fileInput");
       const file = fileInput.files[0];
+      if (!file) {
+        errorDiv.textContent = "Please select an image first.";
+        return;
+      }
+
       const formData = new FormData();
       formData.append("file", file);
 
-      const resultDiv = document.getElementById("result");
-      const errorDiv = document.getElementById("error");
       resultDiv.style.display = "none";
       errorDiv.textContent = "";
 
@@ -83,16 +158,28 @@
 
         resultDiv.style.display = "block";
         resultDiv.innerHTML = `
-          <strong>Prediction:</strong> ${data.prediction}<br><br>
-          <strong>Probabilities:</strong><br>
-          ${Object.entries(data.probabilities).map(([label, prob]) => `${label}: ${prob}`).join("<br>")}
+          <strong>Prediction:</strong> ${data.prediction}
+          <br><br>
+          <strong>Probabilities:</strong>
+          <ul>
+            ${Object.entries(data.probabilities).map(([label, prob]) => {
+              let val;
+              if (typeof prob === "number" && !isNaN(prob)) {
+                val = (prob * 100).toFixed(2) + '%';
+              } else if (typeof prob === "string") {
+                val = prob;
+              } else {
+                val = 'Data tidak valid';
+              }
+              return `<li>${label}: ${val}</li>`;
+            }).join('')}
+          </ul>
         `;
       } catch (error) {
         errorDiv.textContent = error.message;
       }
     });
   </script>
-
 </body>
 
 </html>
