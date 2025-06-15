@@ -88,11 +88,9 @@ def predict():
         predictions = model.predict(processed_img)
         probabilities = predictions[0]
 
-        # Konversi ke index dan label prediksi
         predicted_class_index = int(np.argmax(probabilities))
         predicted_label = class_labels[predicted_class_index]
 
-        # Ubah probabilitas ke persentase
         probability_dict = {
             class_labels[i]: f"{probabilities[i] * 100:.2f}%" for i in range(len(class_labels))
         }
