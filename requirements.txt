@@ -7,6 +7,6 @@ scikit-learn
 python-dotenv
 gunicorn
 flask_cors
-tensorflow==2.10.0
+tensorflow==2.18.0
 opencv-python-headless
 flasgger
