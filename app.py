@@ -3,6 +3,7 @@ from flask_cors import CORS
 from flasgger import Swagger, swag_from
 import numpy as np
 import tensorflow as tf
+import os
 import logging
 import cv2
 from datetime import datetime
@@ -23,6 +24,21 @@ class_labels = ['Benign', 'Malignant', 'Normal']
 app = Flask(__name__)
 CORS(app)
 swagger = Swagger(app)
+
+# Swagger config
+swagger = Swagger(app, config={
+    "headers": [],
+    "specs": [
+        {
+            "endpoint": 'apispec',
+            "route": '/apispec.json',
+            "rule_filter": lambda rule: True,
+            "model_filter": lambda tag: True,
+        }
+    ],
+    "swagger_ui": True,
+    "specs_route": "/apidocs/"
+})
 
 # Preprocess Before Predict
 def preprocess_image(image):
@@ -105,4 +121,5 @@ def predict():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 8080))
+    app.run(host='0.0.0.0', port=port)
