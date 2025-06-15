@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Lung Cancer Prediction</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #f3f3f3;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    input[type="file"] {
+      margin: 10px 0;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    .result {
+      margin-top: 20px;
+      padding: 15px;
+      background-color: #fff;
+      border-left: 5px solid #2196F3;
+    }
+
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>Lung Cancer Prediction</h2>
+
+  <form id="uploadForm">
+    <input type="file" id="fileInput" name="file" accept="image/*" required><br>
+    <button type="submit">Predict</button>
+  </form>
+
+  <div id="result" class="result" style="display:none;"></div>
+  <div id="error" class="error"></div>
+
+  <script>
+    document.getElementById("uploadForm").addEventListener("submit", async function (e) {
+      e.preventDefault();
+
+      const fileInput = document.getElementById("fileInput");
+      const file = fileInput.files[0];
+      const formData = new FormData();
+      formData.append("file", file);
+
+      const resultDiv = document.getElementById("result");
+      const errorDiv = document.getElementById("error");
+      resultDiv.style.display = "none";
+      errorDiv.textContent = "";
+
+      try {
+        const response = await fetch("/predict", {
+          method: "POST",
+          body: formData,
+        });
+
+        const data = await response.json();
+
+        if (!response.ok) {
+          throw new Error(data.error || "Something went wrong");
+        }
+
+        resultDiv.style.display = "block";
+        resultDiv.innerHTML = `
+          <strong>Prediction:</strong> ${data.prediction}<br><br>
+          <strong>Probabilities:</strong><br>
+          ${Object.entries(data.probabilities).map(([label, prob]) => `${label}: ${prob}`).join("<br>")}
+        `;
+      } catch (error) {
+        errorDiv.textContent = error.message;
+      }
+    });
+  </script>
+
+</body>
+
+</html>
