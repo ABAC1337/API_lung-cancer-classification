@@ -1,9 +1,9 @@
-from flask import Flask, request, jsonify
+import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
+from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS
 from flasgger import Swagger, swag_from
 import numpy as np
-import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 import tensorflow as tf
 import logging
 import cv2
@@ -24,33 +24,7 @@ class_labels = ['Benign', 'Malignant', 'Normal']
 # Declare Flask
 app = Flask(__name__)
 CORS(app)
-
-# Swagger config
-template = {
-    "swagger": "2.0",
-    "info": {
-        "title": "Lung Cancer Classification API",
-        "description": "API untuk klasifikasi CT-scan paru menjadi Benign, Malignant, atau Normal.",
-        "version": "1.0"
-    },
-    "basePath": "/"
-}
-
-swagger_config = {
-    "headers": [],
-    "specs": [
-        {
-            "endpoint": 'apispec',
-            "route": '/apispec.json',
-            "rule_filter": lambda rule: True,
-            "model_filter": lambda tag: True,
-        }
-    ],
-    "swagger_ui": True,
-    "specs_route": "/apidocs"
-}
-
-swagger = Swagger(app, template=template, config=swagger_config)
+Swagger(app)
 
 # Preprocess Before Predict
 def preprocess_image(image):
@@ -64,7 +38,7 @@ def preprocess_image(image):
 # Test API
 @app.route('/')
 def home():
-    return jsonify({"message": "Flask API is running for Lung Cancer Classification!"})
+    return render_template('index.html')
 
 # API Predict
 @app.route('/predict', methods=['POST'])
