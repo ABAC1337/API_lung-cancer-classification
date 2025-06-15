@@ -26,7 +26,17 @@ app = Flask(__name__)
 CORS(app)
 
 # Swagger config
-swagger = Swagger(app, config={
+template = {
+    "swagger": "2.0",
+    "info": {
+        "title": "Lung Cancer Classification API",
+        "description": "API untuk klasifikasi CT-scan paru menjadi Benign, Malignant, atau Normal.",
+        "version": "1.0"
+    },
+    "basePath": "/"
+}
+
+swagger_config = {
     "headers": [],
     "specs": [
         {
@@ -37,8 +47,10 @@ swagger = Swagger(app, config={
         }
     ],
     "swagger_ui": True,
-    "specs_route": "/apidocs/"
-})
+    "specs_route": "/apidocs"
+}
+
+swagger = Swagger(app, template=template, config=swagger_config)
 
 # Preprocess Before Predict
 def preprocess_image(image):
